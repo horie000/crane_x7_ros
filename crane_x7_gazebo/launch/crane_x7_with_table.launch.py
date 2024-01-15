@@ -60,7 +60,7 @@ def generate_launch_description():
     move_group = IncludeLaunchDescription(
             PythonLaunchDescriptionSource([
                 get_package_share_directory('crane_x7_moveit_config'),
-                '/launch/run_move_group.launch.py']),
+                '/launch/run_hybrid_planning.launch.py']),
             launch_arguments={'loaded_description': description}.items()
         )
 
